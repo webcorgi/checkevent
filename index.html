@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +7,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gmarket+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Gmarket Sans', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="css/design.css">
 </head>
 <body>
     
     <div class="container">
         <div class="container__top">
-            <img src="./img/text-birdie.png" alt="birdie">
-            <img src="./img/text-event.png" alt="출석체크 이벤트">
+            <img src="./img/text-birdie.png" alt="birdie" class="container__top__birdie">
+            <img src="./img/text-check.png" alt="출석체크 이벤트" class="container__top__event">
         </div>
         <div class="container__calendar">
-            <table>
+            <table class="container__calendar__table">
+                <colgroup>
+                    <col style="width:14.28%">
+                    <col style="width:14.28%">
+                    <col style="width:14.28%">
+                    <col style="width:14.28%">
+                    <col style="width:14.28%">
+                    <col style="width:14.28%">
+                    <col style="width:14.28%">
+                </colgroup>
                 <tr>
                     <th>
                         <span class="container__calendar__day">SUN</span>
                     </th>
                     <th>
-                        <span class="container__calendar__day">MON  </span>
+                        <span class="container__calendar__day">MON</span>
                     </th>
                     <th>
                         <span class="container__calendar__day">TUE</span>
@@ -48,98 +52,257 @@
                 </tr>
                 <tr>
                     <td>
-                        <span class="container__calendar__day">28</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">28</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">29</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">29</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">30</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">30</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">1</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">1</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">4</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">2</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">5</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">3</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">6</span>
-                    </td>
-                    <td>
-                        <span class="container__calendar__day">7</span>
-                    </td>
-                    <td>
-                        <span class="container__calendar__day">9</span>
-                    </td>
-                    <td>
-                        <span class="container__calendar__day">10</span>
-                    </td>
-                    <td>
-                        <span class="container__calendar__day">11</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="container__calendar__day">12</span>
-                    </td>
-                    <td>
-                        <span class="container__calendar__day">13</span>
-                    </td>
-                    <td>
-                        <span class="container__calendar__day">14</span>
-                    </td>
-                    <td>
-                        <span class="container__calendar__day">15</span>
-                    </td>
-                    <td>
-                        <span class="container__calendar__day">16</span>
-                    </td>
-                    <td>
-                        <span class="container__calendar__day">17</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">4</span>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span class="container__calendar__day">19</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">5</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">20</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">6</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">21</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">7</span>
+                        </div>
+                    </td>
+                    <td class="check-start">
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">8</span>
+                            <div class="container__calendar__day__check">
+                                <img src="./img/ball.png" alt="ball" class="container__calendar__day-ball">
+                                <img src="./img/check.png" alt="출석체크" class="container__calendar__day-check">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="check-ing">
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">9</span>
+                            <div class="container__calendar__day__check">
+                                <img src="./img/ball.png" alt="ball" class="container__calendar__day-ball">
+                                <img src="./img/check.png" alt="출석체크" class="container__calendar__day-check">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="check-ing">
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">10</span>
+                            <div class="container__calendar__day__check">
+                                <img src="./img/ball.png" alt="ball" class="container__calendar__day-ball">
+                                <img src="./img/check.png" alt="출석체크" class="container__calendar__day-check">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="check-ing">
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">11</span>
+                            <div class="container__calendar__day__check">
+                                <img src="./img/ball.png" alt="ball" class="container__calendar__day-ball">
+                                <img src="./img/check.png" alt="출석체크" class="container__calendar__day-check">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="check-ing">
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">12</span>
+                            <div class="container__calendar__day__check">
+                                <img src="./img/ball.png" alt="ball" class="container__calendar__day-ball">
+                                <img src="./img/check.png" alt="출석체크" class="container__calendar__day-check">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="check-ing">
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">13</span>
+                            <div class="container__calendar__day__check">
+                                <img src="./img/ball.png" alt="ball" class="container__calendar__day-ball">
+                                <img src="./img/check.png" alt="출석체크" class="container__calendar__day-check">
+                            </div>
+                    </td>
+                    <td class="check-end">
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">14</span>
+                            <div class="container__calendar__day__check">
+                                <img src="./img/ball.png" alt="ball" class="container__calendar__day-ball">
+                                <img src="./img/check.png" alt="출석체크" class="container__calendar__day-check">
+                            </div>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">22</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">15</span>
+                            <div class="container__calendar__day__point">
+                                <img src="./img/text-point.png" alt="7일 출석체크시 15,000 P" class="container__calendar__result-point">
+                                <!-- <div>
+                                    <p class="container__calendar__day__point-text">7일 출석체크시</p>
+                                    <b class="container__calendar__day__point-point">15,000 P</b>
+                                </div> -->
+                            </div>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">23</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">16</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">24</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">17</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">18</span>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span class="container__calendar__day">26</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">19</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">27</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">20</span>
                     </td>
                     <td>
-                        <span class="container__calendar__day">28</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">21</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">29</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">22</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="container__calendar__day">30</span>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">23</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">24</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">25</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">26</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">27</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">28</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">29</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">30</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container__calendar__day__week">
+                            <span class="container__calendar__day">31</span>
+                        </div>
                     </td>
                     <td></td>
                 </tr>
             </table>
+        </div>
+
+        <div class="container__bottom">
+            <div class="container__bottom__info-wrap">
+                <div class="container__bottom__info">
+                    <b class="container__bottom__info-number">01.</b>
+                    <p>출석체크시 1000 포인트 적립금 누적</p>
+                </div>
+                <div class="container__bottom__info">
+                    <b class="container__bottom__info-number">02.</b>
+                    <p>출석체크 적립금 정산은 <b class="text-yellow">매월 16일/말일</b>로 쿠폰 형식으로 지급</p>
+                </div>
+                <div class="container__bottom__info">
+                    <b class="container__bottom__info-number">03.</b>
+                    <div class="container__bottom__info-point">
+                        <div>
+                            <p>7일 출석체크시 <b class="text-yellow">15,000</b>포인트</p>
+                            <p>14일 출석체크시 <b class="text-yellow">30,000</b>포인트</p>
+                        </div>
+                        <div>
+                            <p>21일 출석체크시 <b class="text-yellow">45,000</b>포인트</p>
+                            <p>만기 출석체크시 <b class="text-yellow">70,000</b>포인트</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__bottom__warning">
+                <h2>
+                    <img src="./img/text-warning.png" alt="주의사항" class="container__bottom__warning-text">
+                </h2>
+                <ul class="container__bottom__warning-list">
+                    <li>ㅡ 당일 5만원 이상 충전시 직접 출석체크 클릭</li>
+                    <li>ㅡ 텔레그램 및 라이브챗으로 문의시 지급</li>
+                    <li>ㅡ 출석체크 및 적립금은 매달 1일 초기화</li>
+                    <li>ㅡ 그 외 규정은 사이트 내 모든 규정과 동일</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
